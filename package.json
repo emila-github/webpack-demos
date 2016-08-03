@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "a collection of simple demos of Webpack",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot --inline",
+    "debug": "set NODE_ENV=production"
+  },
   "keywords": [
     "build",
     "demo",
@@ -11,6 +16,11 @@
   "author": "Ruan Yifeng",
   "license": "MIT",
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.8.2",
+>>>>>>> cce9d4fc547ad9c54718836e32e5a4acea071e5f
     "glob": "7.0.0",
     "babel-core": "~6.0.20",
     "babel-loader": "~6.0.1",
@@ -20,7 +30,6 @@
     "css-loader": "~0.16.0",
     "file-loader": "~0.8.4",
     "history": "^1.17.0",
-    "html-webpack-plugin": "2.x",
     "jquery": "~2.1.4",
     "jsx-loader": "~0.13.2",
     "open-browser-webpack-plugin": "0.0.1",
