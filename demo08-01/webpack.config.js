@@ -1,19 +1,19 @@
 var path = require('path');
 var HtmlwebpackPlugin = require('html-webpack-plugin');
-//¶¨ÒåÁËÒ»Ğ©ÎÄ¼ş¼ĞµÄÂ·¾¶
+//å®šä¹‰äº†ä¸€äº›æ–‡ä»¶å¤¹çš„è·¯å¾„
 var ROOT_PATH = path.resolve(__dirname);
 var APP_PATH = path.resolve(ROOT_PATH, 'app');
 var BUILD_PATH = path.resolve(ROOT_PATH, 'build');
 
 module.exports = {
-  //ÏîÄ¿µÄÎÄ¼ş¼Ğ ¿ÉÒÔÖ±½ÓÓÃÎÄ¼ş¼ĞÃû³Æ Ä¬ÈÏ»áÕÒindex.js Ò²¿ÉÒÔÈ·¶¨ÊÇÄÄ¸öÎÄ¼şÃû×Ö
+  //é¡¹ç›®çš„æ–‡ä»¶å¤¹ å¯ä»¥ç›´æ¥ç”¨æ–‡ä»¶å¤¹åç§° é»˜è®¤ä¼šæ‰¾index.js ä¹Ÿå¯ä»¥ç¡®å®šæ˜¯å“ªä¸ªæ–‡ä»¶åå­—
   entry: APP_PATH,
-  //Êä³öµÄÎÄ¼şÃû ºÏ²¢ÒÔºóµÄjs»áÃüÃûÎªbundle.js
+  //è¾“å‡ºçš„æ–‡ä»¶å åˆå¹¶ä»¥åçš„jsä¼šå‘½åä¸ºbundle.js
   output: {
     path: BUILD_PATH,
     filename: '[name].bundle.js'
   },
-  //Ìí¼ÓÎÒÃÇµÄ²å¼ş »á×Ô¶¯Éú³ÉÒ»¸öhtmlÎÄ¼ş
+  //æ·»åŠ æˆ‘ä»¬çš„æ’ä»¶ ä¼šè‡ªåŠ¨ç”Ÿæˆä¸€ä¸ªhtmlæ–‡ä»¶
   plugins: [
     new HtmlwebpackPlugin({
       title: 'Hello World app'
